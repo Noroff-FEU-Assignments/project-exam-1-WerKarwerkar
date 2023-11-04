@@ -6,7 +6,7 @@
     justify-content: center;
     gap: 50px;
     list-style-type: none;
-    padding: 0 50px;
+    padding: 0 100px;
 }
 .navigation li {
     display: inline;
@@ -35,7 +35,29 @@ header {
     align-items: center;
     gap: 20px;
 }
-.social a {
+.social a, .media a {
     color:#333;
     font-size: 20px;
+}
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 30px;
+}
+
+.rights p {
+    color: #333;
+    font-family: "Raleway",Sans-serif;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
 }
