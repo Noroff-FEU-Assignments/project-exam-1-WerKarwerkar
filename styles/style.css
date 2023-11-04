@@ -1,0 +1,41 @@
+.navigation {
+    text-align: center;
+}
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+    padding: 0 50px;
+}
+.navigation li {
+    display: inline;
+    margin: 0 1ch;
+}
+.navigation a {
+    text-decoration: none;
+    font-family: "Raleway",Sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+}
+.navigation a:hover {
+    border-bottom: #333 2px solid;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.social a {
+    color:#333;
+    font-size: 20px;
+}
