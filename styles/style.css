@@ -26,14 +26,18 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 140px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .logo  {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px; 
 }
-.logo h1{
+
+.logo h1 {
     font-family: 'Poppins', sans-serif;
     font-style: italic; 
     font-weight: 600; 
@@ -49,11 +53,11 @@ header {
     align-items: center;
     gap: 20px;
 }
-.social a, .media a {
+.social a, .socialmedia a {
     color:black;
     font-size: 20px;
 }
-.media {
+.socialmedia{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,11 +71,8 @@ header {
     text-align: center;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 40px;
+.line {
     width: 100%;
+    height: 10px;
+    background-color:#eee;;
 }
