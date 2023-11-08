@@ -34,5 +34,6 @@
 .line1 {
     width: 100%;
     height: 20px;
-    background-color: #eee;);
+    background-color: #eee;
+    font-family: "Raleway", sans-serif;
 }
