@@ -32,8 +32,10 @@
 }
 
 .line1 {
-    width: 100%;
     height: 20px;
     background-color: #eee;
     font-family: "Raleway", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
 }
