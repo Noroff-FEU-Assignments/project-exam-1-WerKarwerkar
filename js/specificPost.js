@@ -36,9 +36,9 @@ if (!id) {
 
   function createHtml(details) {
     detailPosts.innerHTML = `<div class="contentPost">
-                                <h1>${details.title.rendered}</h1>
-                                <div>${details.content.rendered}</div>
-                                <p>${details.excerpt.rendered}</p>
+                                <h2>${details.title.rendered}</h2>
+                                <h3>${details.content.rendered}</h3>
+                                <h4>${details.excerpt.rendered}</h4>
                                 </div>`;
     document.title = details.title.rendered; 
   }

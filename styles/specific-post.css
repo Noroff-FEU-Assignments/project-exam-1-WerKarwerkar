@@ -1,0 +1,46 @@
+.line2 {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.contentPost {
+    text-decoration: none;
+}
+
+.contentPost h2 {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Raleway",Sans-serif;
+    font-weight: 300;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+.contentPost h3 {
+    text-align: center;
+    font-family: "Raleway",Sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.contentPost h4 {
+    text-align: center;
+    font-family: "Raleway",Sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+ 
+.contentPost img {
+    display: block; 
+    margin: 20px auto; 
+    width: 550px;
+    height: 360px;
+    margin-bottom: 50px;
+}

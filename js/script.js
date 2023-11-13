@@ -23,10 +23,10 @@ async function fetchPosts() {
     for (let i = 0; i < posts.length; i++) {
       const post = posts[i];
 
-      detailContainer.innerHTML += `<a href="specific-blog.html?id=${post.id}" class="card">
-                                <h1>${post.title.rendered}</h1>
-                                <h2>${post.content.rendered}</h2>
-                                <h3>${post.excerpt.rendered}</h3>
+      detailContainer.innerHTML += `<a href="specific-post.html?id=${post.id}" class="card">
+                                <h2>${post.title.rendered}</h2>
+                                <h3>${post.date}</h3>
+                                <h4>${post.content.rendered}</h4>
                                 </a>`;
 }
     loadingIndicator.style.display = "none";
