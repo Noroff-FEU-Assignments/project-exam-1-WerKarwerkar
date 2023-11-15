@@ -18,7 +18,6 @@ if (!id) {
             throw new Error('Failed to fetch post with that id');
         }
         const details = await response.json();
-        console.log(details);
         createHtml(details);
         document.title = details.title.rendered;
     } catch (error) {
