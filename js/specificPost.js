@@ -34,13 +34,16 @@ if (!id) {
     errorContainer.innerHTML = `<h2>Error: ${message}</h2>`;
   }
 
-  function createHtml(details) {  
-  
+  function createHtml(details) {
+    const titleBlog = document.querySelector(".titleBlog")
     detailPosts.innerHTML = `<div class="contentPost">
-                                <h2>${details.title.rendered}</h2>
-                                <h3>${details.content.rendered}</h3>
-                                <h4>${details.excerpt.rendered}</h4>
-                                </div>`;
-    document.title = `${details.title.rendered}`; 
-  }
+                              <h2>${details.title.rendered}</h2>
+                              <h3>${details.content.rendered}</h3>
+                              <h4>${details.excerpt.rendered}</h4>
+                              </div>`;
+      titleBlog.innerHTML = `${details.title.rendered}`; 
+    } 
 }
+
+
+
