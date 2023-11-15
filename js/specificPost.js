@@ -41,6 +41,6 @@ if (!id) {
                                 <h3>${details.content.rendered}</h3>
                                 <h4>${details.excerpt.rendered}</h4>
                                 </div>`;
-    document.title = `${details.title.rendered}`; 
+    document.title = details.title.rendered; 
   }
 }
