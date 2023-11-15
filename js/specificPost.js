@@ -30,7 +30,7 @@ if (!id) {
   fetchPost();
 
   function showError(message) {
-    const errorContainer = document.getElementById("post-details");
+    const errorContainer = document.getElementById("titlePosts");
     errorContainer.innerHTML = `<h2>Error: ${message}</h2>`;
   }
 
