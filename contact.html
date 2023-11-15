@@ -45,17 +45,29 @@
       </p>
       <div class="contact-box">
         <form id="contactForm">
-          <input type="text" id="name" class="input-field" placeholder="Your Name" required>
-      
-          <input type="email" id="email" class="input-field" placeholder="Your Email" required>
-      
-          <input type="text" id="subject" class="input-field" placeholder="Subject" required>
-      
-          <textarea id="message" class="input-field textarea-field" placeholder="Your Message" required></textarea>
-      
-          <button type="button" class="btn" onclick="validateForm()">Send Message</button>
+            <div>
+                <input type="text" id="name" class="input-field" placeholder="Your Name" required>
+                <span id="nameError" class="error-message"></span>
+            </div>
+
+            <div>
+                <input type="email" id="email" class="input-field" placeholder="Your Email" required>
+                <span id="emailError" class="error-message"></span>
+            </div>
+
+            <div>
+                <input type="text" id="subject" class="input-field" placeholder="Subject" required>
+                <span id="subjectError" class="error-message"></span>
+            </div>
+
+            <div>
+                <textarea id="message" class="input-field textarea-field" placeholder="Your Message" required></textarea>
+                <span id="messageError" class="error-message"></span>
+            </div>
+
+            <button type="button" class="btn" onclick="validateForm()">Send Message</button>
         </form>
-      </div>
+    </div>
 
     </main>
 

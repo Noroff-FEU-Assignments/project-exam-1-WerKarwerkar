@@ -4,23 +4,25 @@ function validateForm() {
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
+    clearErrorMessages();
+
     if (name.length < 5) {
-        alert("Name should be more than 5 characters long");
+        showError("name", "Name should be more than 5 characters long");
         return;
     }
 
     if (!isValidEmail(email)) {
-        alert("Invalid email address");
+        showError("email", "Invalid email address");
         return;
     }
 
     if (subject.length < 15) {
-        alert("Subject should be more than 15 characters long");
+        showError("subject", "Subject should be more than 15 characters long");
         return;
     }
 
     if (message.length < 25) {
-        alert("Message content should be more than 25 characters long");
+        showError("message", "Message content should be more than 25 characters long");
         return;
     }
 
@@ -29,4 +31,14 @@ function validateForm() {
 
 function isValidEmail(email) {
     return email.includes('@');
+}
+
+function showError(fieldId, errorMessage) {
+    const errorElement = document.getElementById(`${fieldId}Error`);
+    errorElement.textContent = errorMessage;
+}
+
+function clearErrorMessages() {
+    const errorMessages = document.querySelectorAll(".error-message");
+    errorMessages.forEach(message => message.textContent = "");
 }
