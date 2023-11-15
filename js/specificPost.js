@@ -13,19 +13,20 @@ if (!id) {
 
   async function fetchPost() {
     try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error('Failed to fetch post with that id');
-      }
-      const details = await response.json();
-      createHtml(details);
-      document.title = details.title;
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('Failed to fetch post with that id');
+        }
+        const details = await response.json();
+        console.log(details);
+        createHtml(details);
+        document.title = details.title.rendered;
     } catch (error) {
         showError(error.message);
     } finally {
-      loadingIndicator.style.display = "none";
+        loadingIndicator.style.display = "none";
     }
-  }
+}
 
   fetchPost();
 
@@ -34,13 +35,14 @@ if (!id) {
     errorContainer.innerHTML = `<h2>Error: ${message}</h2>`;
   }
 
-  function createHtml(details) {  
-    
+  function createHtml(details) {
+    const detailPosts = document.getElementById("post-details");
+
     detailPosts.innerHTML = `<div class="contentPost">
                                 <h2>${details.title.rendered}</h2>
-                                <h3>${details.content.rendered}</h3>
-                                <h4>${details.excerpt.rendered}</h4>
-                                </div>`;
-    document.title = details.title.rendered; 
-  }
+                                <div>${details.content.rendered}</div>
+                                <div>${details.excerpt.rendered}</div>
+                              </div>`;
+    document.title = details.title.rendered;
+}
 }
