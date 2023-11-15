@@ -43,19 +43,19 @@
       <p>
         Say Hello! :)
       </p>
-    <div class="contact-box">
-      <form>
-        <input type="text" class="input-field" placeholder="Your Name" required>
-        
-        <input type="email" class="input-field" placeholder="Your Email" required>
-        
-        <input type="text" class="input-field" placeholder="Subject" required>
-        
-        <textarea type="text" class="input-field textarea-field" placeholder="Your Message" required></textarea>
-        
-        <button type="button" class="btn">Send Message</button>
-      </form>
-    </div>
+      <div class="contact-box">
+        <form id="contactForm">
+          <input type="text" id="name" class="input-field" placeholder="Your Name" required>
+      
+          <input type="email" id="email" class="input-field" placeholder="Your Email" required>
+      
+          <input type="text" id="subject" class="input-field" placeholder="Subject" required>
+      
+          <textarea id="message" class="input-field textarea-field" placeholder="Your Message" required></textarea>
+      
+          <button type="button" class="btn" onclick="validateForm()">Send Message</button>
+        </form>
+      </div>
 
     </main>
 
