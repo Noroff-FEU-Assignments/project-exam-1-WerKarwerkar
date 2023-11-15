@@ -1,4 +1,8 @@
-
+.line2 {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
 .navigation ul {
     display: flex;
     justify-content: center;
