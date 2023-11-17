@@ -23,9 +23,13 @@ async function fetchPosts() {
     for (let i = 0; i < posts.length; i++) {
       const post = posts[i];
 
+      const postDate = new Date(post.date);
+
+
+
       detailContainer.innerHTML += `<a href="specific-post.html?id=${post.id}" class="card">
                                 <h2>${post.title.rendered}</h2>
-                                <h3>${post.date}</h3>
+                                <h3></h3>
                                 <h4>${post.better_featured_image.alt_text}</h4>
                                 <img src="${post.better_featured_image.source_url}">
                                 </a>`;
