@@ -26,7 +26,7 @@ async function fetchPosts() {
       detailContainer.innerHTML += `<a href="specific-post.html?id=${post.id}" class="card">
                                 <h2>${post.title.rendered}</h2>
                                 <h3>${post.date}</h3>
-                                <h4>${post.better_featured_image}</h4>
+                                <img src="${post.better_featured_image.source_url}">
                                 </a>`;
 }
     loadingIndicator.style.display = "none";
