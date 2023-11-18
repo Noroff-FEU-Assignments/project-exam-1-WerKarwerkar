@@ -40,7 +40,7 @@ async function fetchPosts() {
   } finally {
     loadingIndicator.style.display = "none";
 
-    if (displayedPosts < post.length) {
+    if (displayedPosts < posts.length) {
       seeMoreButton.style.display = "block";
     } else {
       seeMoreButton.style.display = "none";
