@@ -35,15 +35,16 @@ async function fetchPosts() {
                                       <img src="${post.better_featured_image.source_url}">
                                     </a>`;
     }
+  } catch (error) {
+    showError(error.message);
+  } finally {
     loadingIndicator.style.display = "none";
 
-    if (displayedPosts < posts.length) {
+    if (displayedPosts < post.length) {
       seeMoreButton.style.display = "block";
     } else {
       seeMoreButton.style.display = "none";
     }
-  } catch (error) {
-    showError(error.message);
   }
 }
 
