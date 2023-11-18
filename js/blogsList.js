@@ -38,19 +38,19 @@ async function fetchPosts() {
                                 </a>`;
 }
     loadingIndicator.style.display = "none";
-  } catch (error) {
-    showError(error.message); 
-  }
-  if displayedPosts < posts.length {
+  
+  if (displayedPosts < posts.length) {
     seeMoreButton.style.display = "block";
   } else {
     seeMoreButton.style.display = "none";
-  
+  } }
+  catch (error) {
+    showError(error.message); 
+  }
   }
   function loadMorePosts () {
     displayedPosts += 10;
     fetchPosts();
-  }
   }
 seeMoreButton.addEventListener ('click', loadMorePosts);
 
