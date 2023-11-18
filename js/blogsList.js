@@ -23,35 +23,35 @@ async function fetchPosts() {
     detailContainer.innerHTML = "";
     const posts = result;
 
-    for (let i = 0; i < posts.length; i++) {
+    for (let i = 0; i < displayedPosts; i++) {
       const post = posts[i];
       const postDate = new Date(post.date);
       const formattedDate = postDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
-
-
       detailContainer.innerHTML += `<a href="specific-post.html?id=${post.id}" class="card">
-                                <h2>${post.title.rendered}</h2>
-                                <h3>${formattedDate}</h3>
-                                <h4>${post.better_featured_image.alt_text}</h4>
-                                <img src="${post.better_featured_image.source_url}">
-                                </a>`;
-}
+                                      <h2>${post.title.rendered}</h2>
+                                      <h3>${formattedDate}</h3>
+                                      <h4>${post.better_featured_image.alt_text}</h4>
+                                      <img src="${post.better_featured_image.source_url}">
+                                    </a>`;
+    }
     loadingIndicator.style.display = "none";
-  
-  if (displayedPosts < posts.length) {
-    seeMoreButton.style.display = "block";
-  } else {
-    seeMoreButton.style.display = "none";
-  } }
-  catch (error) {
-    showError(error.message); 
+
+    if (displayedPosts < posts.length) {
+      seeMoreButton.style.display = "block";
+    } else {
+      seeMoreButton.style.display = "none";
+    }
+  } catch (error) {
+    showError(error.message);
   }
-  }
-  function loadMorePosts () {
-    displayedPosts += 10;
-    fetchPosts();
-  }
-seeMoreButton.addEventListener ('click', loadMorePosts);
+}
+
+function loadMorePosts() {
+  displayedPosts += 10;
+  fetchPosts();
+}
+
+seeMoreButton.addEventListener('click', loadMorePosts);
 
 fetchPosts();
