@@ -1,5 +1,9 @@
 const url = "https://www.weronkakarczmarczyk.no/wp-json/wp/v2/posts";
 const detailContainer = document.getElementById("results");
+const loadingIndicator = document.getElementById("loading-indicator");
+const seeMoreButton = document.getElementById("see-more");
+
+let displayedPosts = 10;
 
 function showError(message) {
   const errorContainer = document.getElementById("results");
@@ -8,7 +12,6 @@ function showError(message) {
 
 async function fetchPosts() {
   try {
-    const loadingIndicator = document.getElementById("loading-indicator");
     loadingIndicator.style.display = "block";
 
     const response = await fetch(url);
@@ -38,6 +41,17 @@ async function fetchPosts() {
   } catch (error) {
     showError(error.message); 
   }
-}
+  if displayedPosts < posts.length {
+    seeMoreButton.style.display = "block";
+  } else {
+    seeMoreButton.style.display = "none";
+  
+  }
+  function loadMorePosts () {
+    displayedPosts += 10;
+    fetchPosts();
+  }
+  }
+seeMoreButton.addEventListener ('click', loadMorePosts);
 
 fetchPosts();
