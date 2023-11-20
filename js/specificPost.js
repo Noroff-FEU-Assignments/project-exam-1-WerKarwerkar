@@ -39,8 +39,7 @@ if (!id) {
 
     detailPosts.innerHTML = `<div class="contentPost">
                                 <h2>${details.title.rendered}</h2>
-                                <div>${details.content.rendered}</div>
-                                <div>${details.excerpt.rendered}</div>
+                                <h3>${details.content.rendered}</h3>
                               </div>`;
     document.title = details.title.rendered;
 }

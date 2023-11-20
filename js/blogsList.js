@@ -4,7 +4,6 @@ const loadingIndicator = document.getElementById("loading-indicator");
 const seeMoreButton = document.getElementById("see-more");
 
 let displayedPosts = 10;
-let posts;
 
 function showError(message) {
   const errorContainer = document.getElementById("results");
@@ -19,12 +18,17 @@ async function fetchPosts() {
     if (!response.ok) {
       throw new Error('Failed to fetch Posts');
     }
-    const result = await response.json();
 
+    const posts = await response.json();
+
+    
     detailContainer.innerHTML = "";
-    posts = result;
 
     for (let i = 0; i < displayedPosts; i++) {
+      if (i >= posts.length) {
+        break; 
+      }
+
       const post = posts[i];
       const postDate = new Date(post.date);
       const formattedDate = postDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
@@ -40,12 +44,6 @@ async function fetchPosts() {
     showError(error.message);
   } finally {
     loadingIndicator.style.display = "none";
-
-    if (posts && displayedPosts < posts.length) {
-      seeMoreButton.style.display = "block";
-    } else {
-      seeMoreButton.style.display = "none";
-    }
   }
 }
 

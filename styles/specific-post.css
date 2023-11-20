@@ -14,6 +14,8 @@
 }
 .contentPost {
     text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
    
 }
 
@@ -25,8 +27,9 @@
     font-size: 44px;
     text-transform: uppercase;
     color: black;
-    margin-top: 80px;
-    margin-bottom: 0;
+    background-color: #eee;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 .contentPost h3 {
     text-align: center;
@@ -35,32 +38,16 @@
     font-size: 18px;
     text-decoration: none;
     color: black;
-}
-
-.contentPost h4 {
-    text-align: center;
-    font-family: "Raleway",Sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
  
 .contentPost img {
     display: block; 
     margin: 20px auto; 
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 550px;
     height: auto;
 }
 
-.contentPost p {
-    text-align: center;
-    font-family: "Raleway",Sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
