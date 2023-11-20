@@ -4,6 +4,7 @@ const loadingIndicator = document.getElementById("loading-indicator");
 const seeMoreButton = document.getElementById("see-more");
 
 let displayedPosts = 10;
+let posts;
 
 function showError(message) {
   const errorContainer = document.getElementById("results");
@@ -21,7 +22,7 @@ async function fetchPosts() {
     const result = await response.json();
 
     detailContainer.innerHTML = "";
-    const posts = result;
+    posts = result;
 
     for (let i = 0; i < displayedPosts; i++) {
       const post = posts[i];
@@ -40,7 +41,7 @@ async function fetchPosts() {
   } finally {
     loadingIndicator.style.display = "none";
 
-    if (displayedPosts < posts.length) {
+    if (posts && displayedPosts < posts.length) {
       seeMoreButton.style.display = "block";
     } else {
       seeMoreButton.style.display = "none";
