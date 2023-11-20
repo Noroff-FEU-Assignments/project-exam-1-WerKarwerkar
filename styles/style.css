@@ -6,9 +6,8 @@
 .navigation ul {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
     list-style-type: none;
-    padding: 0 100px;
 }
 .navigation li {
     display: inline;
@@ -28,7 +27,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 80px;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -53,17 +51,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    margin-left: 50px;
 }
 .social a, .socialmedia a {
     color:black;
     font-size: 20px;
 }
-.socialmedia{
+.socialmedia {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     margin: 30px;
 }
 
