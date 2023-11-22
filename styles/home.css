@@ -1,0 +1,17 @@
+.wrapper-carousel {
+    max-width: 350px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+.carousel-header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s;
+}
