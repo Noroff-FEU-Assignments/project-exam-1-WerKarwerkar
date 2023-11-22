@@ -28,7 +28,7 @@ async function fetchPosts() {
       if (i >= posts.length) {
         break; 
       }
-
+      
       const post = posts[i];
       const postDate = new Date(post.date);
       const formattedDate = postDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
