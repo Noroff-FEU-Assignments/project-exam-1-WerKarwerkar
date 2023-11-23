@@ -79,12 +79,6 @@ header {
 }
 
 
-nav {
-    display: none;
-}
-#menu-checkbox:checked ~ nav {
-    display: block;
-}
 
 
 
@@ -103,9 +97,70 @@ nav {
 @keyframes spin {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
-  }
+}
  
-      
+.mobile-nav-toggle {
+    display: none;
+}
 
+
+@media (max-width: 1024px) {
+
+.mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav-toggle__button {
+    width: 26px;
+    height: 18px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav-toggle__button {
+    width: 26px;
+    height: 18px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line {
+    content: '';
+    display: block;
+    background: #eaeaea;
+    width: 100%;
+    height: 2px;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.mobile-nav-toggle__button.is-open .line--first {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-nav-toggle__button.is-open .line--second {
+    opacity: 0;
+}
+
+.mobile-nav-toggle__button.is-open .line--third {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+  
+}
 
 
