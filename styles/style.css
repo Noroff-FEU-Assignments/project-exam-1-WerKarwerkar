@@ -124,6 +124,21 @@ header {
         border-radius: 10px;
         padding: 8px;
       } 
+      .navigation {
+        display: flex;
+        flex: 1;
+      }
+      
+      .navigation ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 65px;
+        list-style-type: none;
+        flex: 1;
+        margin: 0;
+        padding: 0 50px;
+      }
       
       
     
