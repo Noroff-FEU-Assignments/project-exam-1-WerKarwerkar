@@ -139,7 +139,7 @@ header {
     justify-content: space-between;
 }
 
-.line {
+.lone {
     content: '';
     display: block;
     background: #eaeaea;
