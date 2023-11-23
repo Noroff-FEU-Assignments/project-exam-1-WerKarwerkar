@@ -78,15 +78,29 @@ header {
     background-color:#eee;
 }
 
+
 .nav-bar {
     display: flex;
     flex-direction: row;
     position: relative;
     margin-top: 25px;
-  }
-  .hamburger {
+}
+.hamburger {
     display: none;
+    flex-direction: column;
+    cursor: pointer;
   }
+  
+.lone {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+  
+  
+
+
 
 .loader {
     border: 16px solid #6b6868cd;
@@ -105,8 +119,53 @@ header {
     100% { transform: translate(-50%, -50%) rotate(360deg); }
   }
  
-  @media (max-width: 900px) {
-    
       
-    
+@media (max-width: 900px) {
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+      
+.navigation.show {
+    display: flex;
+ }
+      
+.navigation a {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+      
+.hamburger {
+    display: flex;
+}
+
+
+@media (max-width: 900px) {
+.navigation {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
     }
+  
+.navigation.show {
+      display: flex;
+    }
+  
+.navigation a {
+      padding: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+  
+.hamburger {
+      display: flex;
+    }
+}}
