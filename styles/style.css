@@ -142,7 +142,7 @@ header {
 .lone {
     content: '';
     display: block;
-    background: #eaeaea;
+    background: black;
     width: 100%;
     height: 2px;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
