@@ -109,12 +109,13 @@
         width: 100%;
         box-sizing: border-box;
         text-transform: uppercase;
+        background-color: #eee;
     }
     #hamnav label {
         display: inline-block;
         color: black;
         background:#eee;
-        font-size: 20px;
+        font-size: 24px;
         padding: 10px;
     }
    
@@ -123,8 +124,8 @@
     }
     #hamnav input:checked ~ #hamitems {
         display: block;
-        background-color: #eee;
     }
+
     #hamitems a[href*="instagram"], #hamitems a[href*="facebook"] {
         display: none;
       }
