@@ -114,8 +114,7 @@
         display: inline-block;
         color: black;
         background:#eee;
-        font-size: 16px;
-        font-family: "Raleway",Sans-serif;
+        font-size: 20px;
         padding: 10px;
     }
    
@@ -124,6 +123,7 @@
     }
     #hamnav input:checked ~ #hamitems {
         display: block;
+        background-color: #eee;
     }
     #hamitems a[href*="instagram"], #hamitems a[href*="facebook"] {
         display: none;
