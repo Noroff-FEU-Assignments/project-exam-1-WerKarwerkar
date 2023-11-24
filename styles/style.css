@@ -3,33 +3,6 @@
     height: 1px;
     background-color: black;
 }
-/*.navigation ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    list-style-type: none;
-}
-.navigation li {
-    display: inline;
-    margin: 0 10px;
-}
-.navigation a {
-    text-decoration: none;
-    font-family: "Raleway",Sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: black;
-}
-.navigation a:hover {
-    border-bottom: #333 2px solid;
-}
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}*/
 
 #hamnav {
     width: 100%;
@@ -58,7 +31,7 @@ header {
 }
 
 #hamitems a:hover {
-    border-bottom: #333 2px solid;
+    border-bottom: black 1px solid;
 }
 
 #hamitems a[href*="instagram"], #hamitems a[href*="facebook"] {
@@ -144,6 +117,9 @@ header {
         font-size: 16px;
         font-family: "Raleway",Sans-serif;
         padding: 10px;
+    }
+    #hamitems a:hover {
+        border-bottom: none;
     }
     #hamitems {
         display: block;
