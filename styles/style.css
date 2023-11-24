@@ -123,7 +123,7 @@
         display: block;
     }
     #hamnav input:checked ~ #hamitems {
-        display: block;
+        display: none;
     }
     #hamitems a[href*="instagram"], #hamitems a[href*="facebook"] {
         display: none;
