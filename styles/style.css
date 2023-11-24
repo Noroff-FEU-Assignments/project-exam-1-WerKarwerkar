@@ -33,15 +33,20 @@ header {
 
 #hamnav {
     width: 100%;
-    background-color: rgb(145, 139, 139)b6b;
 }
 
 #hamnav label, #hamburger { 
     display: none;
 }
+
 #hamitems {
     display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    gap: 40px;
 }
+
 #hamitems a {
     padding: 10px;
     text-decoration: none;
@@ -50,10 +55,15 @@ header {
     text-transform: uppercase;
     color: black;
     text-align: center;
-   
 }
+
 #hamitems a:hover {
     border-bottom: #333 2px solid;
+}
+
+#hamitems a[href*="instagram"], #hamitems a[href*="facebook"] {
+    color:black;
+    font-size: 20px;
 }
 
 .logo  {
@@ -72,12 +82,8 @@ header {
 
 
 
-.social {
-    display: flex;
-    justify-content: flex-end;
-    gap: 40px;
-}
-.social a, .socialmedia a {
+
+.socialmedia a {
     color:black;
     font-size: 20px;
     
@@ -129,7 +135,6 @@ header {
         display: block;
         width: 100%;
         box-sizing: border-box;
-        border-top: 1px solid #ca3a3a;
         text-transform: uppercase;
     }
     #hamnav label {
@@ -141,11 +146,14 @@ header {
         padding: 10px;
     }
     #hamitems {
-        display: none;
+        display: block;
     }
     #hamnav input:checked ~ #hamitems {
         display: block;
     }
+    #hamitems a[href*="instagram"], #hamitems a[href*="facebook"] {
+        display: none;
+      }
 }
     
 
