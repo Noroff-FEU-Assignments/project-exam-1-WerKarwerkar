@@ -120,10 +120,10 @@
     }
    
     #hamitems {
-        display: block;
+        display: none;
     }
     #hamnav input:checked ~ #hamitems {
-        display: none;
+        display: block;
     }
     #hamitems a[href*="instagram"], #hamitems a[href*="facebook"] {
         display: none;
