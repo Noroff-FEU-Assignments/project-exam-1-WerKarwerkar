@@ -118,9 +118,7 @@
         font-family: "Raleway",Sans-serif;
         padding: 10px;
     }
-    #hamitems a:hover {
-        border-bottom: none;
-    }
+   
     #hamitems {
         display: block;
     }
