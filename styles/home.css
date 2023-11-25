@@ -1,14 +1,15 @@
-@import url(<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />);
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
 .container-carousel {
     width: 80%;
     margin: 10px auto;
-  
 }
+
 .carousel {
     border: 2px solid #ccc;
     height: 400px;
     overflow: hidden;
+    position: relative;
 }
 
 .slider {
@@ -23,14 +24,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .controls .arrow {
     position: absolute;
-    top: 75%;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
-    font-size: 20px;
+}
+
+.controls .arrow i {
+    font-size: 30px;
 }
 
 .arrow.left {
