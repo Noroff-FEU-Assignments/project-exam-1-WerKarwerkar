@@ -1,17 +1,21 @@
+@import url(<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />);
+
 .container-carousel {
-    width: 90%;
+    width: 80%;
     margin: 10px auto;
   
 }
 .carousel {
     border: 2px solid #ccc;
     height: 400px;
+    overflow: hidden;
 }
 
 .slider {
     height: 100%;
     display: flex;
     width: 400%;
+    transition: all 0.3s;
 }
 
 .slider section {
@@ -24,8 +28,9 @@
 
 .controls .arrow {
     position: absolute;
-    top: 50%;
+    top: 75%;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .arrow.left {
