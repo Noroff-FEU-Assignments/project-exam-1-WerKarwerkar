@@ -1,17 +1,37 @@
-.wrapper-carousel {
-    max-width: 350px;
-    overflow: hidden;
-    margin: auto;
-    position: relative;
-    box-sizing: border-box;
-    scroll-behavior: smooth; 
+.container-carousel {
+    width: 90%;
+    margin: 10px auto;
+  
 }
-.carousel-header {
-    text-align: center;
-    font-size: 30px;
+.carousel {
+    border: 2px solid #ccc;
+    height: 400px;
 }
 
-.carousel-container {
+.slider {
+    height: 100%;
     display: flex;
-    transition: transform 0.5s;
+    width: 400%;
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
 }
