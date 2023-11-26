@@ -1,8 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
+.latestPosts {
+    font-family: "Raleway", Sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 145px;
+    padding-top: 20px;
+}
+
+.morePosts {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #eee;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Raleway", Sans-serif;
+    align-self: flex-end;
+}
+
+.morePosts a {
+    color: black;
+    text-decoration: none;
+}
+
+.morePosts:hover {
+    background-color: #fff;
+}
+
+
 .container-carousel {
     width: 80%;
-    margin: 10px auto;
+    margin: 60px auto;
 }
 
 .carousel {

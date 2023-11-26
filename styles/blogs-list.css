@@ -67,5 +67,10 @@
     border: none;
     cursor: pointer;
     font-family: "Raleway",Sans-serif;
+
+}
+
+.see-more:hover {
+    background-color: #fff;;
 }
 
