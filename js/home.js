@@ -10,12 +10,12 @@ leftArrow.addEventListener('click', function() {
 });
 
 rightArrow.addEventListener('click', function() {
-    sectionIndex = (sectionIndex < 2) ? sectionIndex + 1 : 3;
+    sectionIndex = (sectionIndex < 2) ? sectionIndex + 1 : 0;
     initialSlider.style.transform = 'translate(' + (sectionIndex * -25) + '%)';
 });
 
 async function fetchData() {
-    const url = "https://www.weronkakarczmarczyk.no/wp-json/wp/v2/posts";
+    const url = "https://www.weronkakarczmarczyk.no/wp-json/wp/v2/posts?per_page=4&order=desc";
 
     try {
         const response = await fetch(url);
@@ -26,13 +26,12 @@ async function fetchData() {
     }
 }
 
-
 async function updateCarousel() {
     const postData = await fetchData();
     const postSections = postData.map(post => {
         return `<section>
                    <div>
-                     <a href="html/single-blog.html?id=${post.id}&title=${post.title.rendered}}"><img src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.source_url}" class="latest-posts"/></a>
+                     <a href="html/single-blog.html?id=${post.id}&title=${post.title.rendered}"><img src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.source_url}" class="latest-posts"/></a>
                    </div>
                  </section>`;
     });
