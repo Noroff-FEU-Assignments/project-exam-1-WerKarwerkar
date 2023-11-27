@@ -47,6 +47,7 @@
     height: 400px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .slider {
