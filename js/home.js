@@ -31,7 +31,7 @@ async function updateCarousel() {
     const postSections = postData.map(post => {
         return `<section>
            <div class="latest-posts">
-             <a href="/html/specific-post.html?id=${post.id}&title=${post.title.rendered}">
+             <a href="specific-post.html?id=${post.id}"&title=${post.title.rendered}">
                <img src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.source_url}" class="box"/>
              </a>
              <div>
