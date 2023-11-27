@@ -30,10 +30,16 @@ async function updateCarousel() {
     const postData = await fetchData();
     const postSections = postData.map(post => {
         return `<section>
-                   <div>
-                     <a href="html/single-blog.html?id=${post.id}&title=${post.title.rendered}"><img src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.source_url}" class="latest-posts"/></a>
-                   </div>
-                 </section>`;
+           <div class="latest-posts">
+             <a href="/html/specific-post.html?id=${post.id}&title=${post.title.rendered}">
+               <img src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.source_url}" class="box"/>
+             </a>
+             <div>
+               <p>${post.title.rendered}</p>
+               <h2><a href="html/specific-post.html?id=${post.id}&title=${post.title.rendered}"></a></h2>
+             </div>
+           </div>
+         </section>`;
     });
 
     initialSlider.innerHTML = postSections.join('');

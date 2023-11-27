@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-.latestPosts {
+.latestTravels {
     font-family: "Raleway", Sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 300;
     display: flex;
     justify-content: flex-start;
-    margin-left: 145px;
-    padding-top: 20px;
+    padding-left: 285px;
+    padding-top: 60px;
 }
 
 .morePosts {
@@ -24,7 +24,7 @@
     cursor: pointer;
     font-family: "Raleway", Sans-serif;
     align-self: flex-end;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .morePosts a {
@@ -38,8 +38,8 @@
 
 
 .container-carousel {
-    width: 90%;
-    margin: 60px auto;
+    width: 60%;
+    margin: 10px auto;
 }
 
 .carousel {
@@ -47,14 +47,16 @@
     height: 400px;
     overflow: hidden;
     position: relative;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .slider {
     height: 100%;
     display: flex;
     width: 400%;
-    transition: all 0.3s;
+    transition: all 2s;
+    scroll-behavior: smooth;
 }
 
 .slider section {
@@ -81,4 +83,34 @@
 
 .arrow.right {
     right: 10px;
+}
+
+.latest-posts {
+    position: relative;
+    overflow: hidden;
+}
+
+.latest-posts img {
+    width: 560px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.latest-posts div {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.latest-posts p {
+    font-family: "Raleway", Sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0
 }
