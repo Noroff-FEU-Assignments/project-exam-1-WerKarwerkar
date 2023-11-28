@@ -4,12 +4,12 @@ const rightArrow = document.querySelector('.right');
 
 let sectionIndex = 0;
 
-leftArrow.addEventListener('click', function() {
+leftArrow.addEventListener('click', function () {
     sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0;
     initialSlider.style.transform = 'translate(' + (sectionIndex * -25) + '%)';
 });
 
-rightArrow.addEventListener('click', function() {
+rightArrow.addEventListener('click', function () {
     sectionIndex = (sectionIndex < 2) ? sectionIndex + 1 : 0;
     initialSlider.style.transform = 'translate(' + (sectionIndex * -25) + '%)';
 });
@@ -28,10 +28,11 @@ async function fetchData() {
 
 async function updateCarousel() {
     const postData = await fetchData();
-    const postSections = postData.map(post => {
+
+    initialSlider.innerHTML = postData.map(post => {
         return `<section>
            <div class="latest-posts">
-             <a href="specific-post.html?id=${post.id}"&title=${post.title.rendered}">
+             <a href="specific-post.html?id=${post.id}&title=${post.title.rendered}">
                <img src="${post.better_featured_image.source_url}" alt="${post.better_featured_image.source_url}" class="box"/>
              </a>
              <div>
@@ -40,9 +41,7 @@ async function updateCarousel() {
              </div>
            </div>
          </section>`;
-    });
-
-    initialSlider.innerHTML = postSections.join('');
+    }).join('');
 
     sectionIndex = 0;
 }
