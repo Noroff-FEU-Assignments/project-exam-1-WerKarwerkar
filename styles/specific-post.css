@@ -1,4 +1,7 @@
-
+.specific {
+    display: block;
+    max-width: 90%;
+}
 .share {
     text-align: center;
     font-family: "Raleway",Sans-serif;
@@ -39,6 +42,7 @@
     text-decoration: none;
     color: black;
     margin-bottom: 100px;
+
 }
 
  
