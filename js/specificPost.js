@@ -21,6 +21,7 @@ if (!id) {
       const details = await response.json();
       createHtml(details);
       document.title = details.title.rendered;
+
     } catch (error) {
       showError(error.message);
     } finally {
@@ -56,6 +57,7 @@ if (!id) {
 
     modal.addEventListener("click", () => {
       modal.close();
+      
     });
   }
 }
