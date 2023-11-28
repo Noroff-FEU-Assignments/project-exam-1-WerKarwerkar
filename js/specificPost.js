@@ -49,10 +49,8 @@ if (!id) {
     createModal.forEach((imageWp) => {
       const getWpImg = imageWp.innerHTML;
       imageWp.addEventListener("click", () => {
+        modalContent.innerHTML = `<div class="contentPost">${getWpImg}</div>`;
         modal.showModal();
-        modalContent.innerHTML = `<div class="contentPost">
-                                    ${getWpImg}
-                                  </div>`;
       });
     });
 
