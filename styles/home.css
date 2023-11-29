@@ -115,3 +115,30 @@
     font-weight: 300;
     margin: 0
 }
+
+@media screen and (max-width: 768px) {
+    .container-carousel {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .carousel {
+        height: 300px; 
+        margin-top: 50px;
+        margin-bottom: 20px; 
+
+    .slider {
+        width: 800%; 
+    }
+
+    .latest-posts img {
+        width: 400px; 
+        height: 200px; 
+        object-fit: cover;
+
+    }
+
+    .latest-posts div {
+        bottom: 0; 
+    }
+}
