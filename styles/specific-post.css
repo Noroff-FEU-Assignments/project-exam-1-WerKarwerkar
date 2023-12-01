@@ -63,5 +63,6 @@
         max-width: 100%;
     }
     #post-details > div > h3 > figure:nth-child(2) > img {   
-     max-width: 90%;
-}}
+        max-width: 90%;
+    }
+}
