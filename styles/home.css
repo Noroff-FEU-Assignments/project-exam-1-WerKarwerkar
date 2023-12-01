@@ -121,7 +121,7 @@
 @media screen and (max-width: 768px) {
 
     .latest-posts img {
-        max-width: 100%;
-        height: auto;
+        max-width: 220px;
+        height: 150px;
     }
 } 
