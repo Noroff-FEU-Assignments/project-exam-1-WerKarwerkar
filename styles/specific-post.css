@@ -64,5 +64,6 @@
     }
     .contentPost img {   
         max-width: 90%;
+        height: auto;
     }
 }
