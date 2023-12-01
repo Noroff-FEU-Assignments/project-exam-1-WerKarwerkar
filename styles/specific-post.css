@@ -53,11 +53,11 @@
 
 
 @media screen and (max-width: 768px) {
-        
-    .wp-block-image size-full is-resized {
-        width: 150rem;
-
-    }
-        
-
+    .contentPost {
+        text-decoration: none;
+        margin-left: 0;
+        margin-right: 0;
+       
+    }     
+    
 }
