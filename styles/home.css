@@ -124,4 +124,19 @@
         max-width: 220px;
         height: 150px;
     }
+    .latest-posts div {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5); 
+        color: #fff; 
+        box-sizing: border-box;
+    }
+    .latest-posts p {
+        font-family: "Raleway", Sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 0
+    }
 } 
