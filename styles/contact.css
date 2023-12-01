@@ -106,8 +106,8 @@
     .error-message {
         font-size: 10px; 
     }
-    .form {
-        width: 100%;
+    #contactForm {
+        width: 80%;
         height: auto;
     }
 }
