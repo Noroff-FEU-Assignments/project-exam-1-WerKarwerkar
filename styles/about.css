@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
     .container img {
-        max-width: 300px;
+        max-width: 320px;
         display: block;
         margin: auto;
         margin-bottom: 20px;
