@@ -62,7 +62,7 @@
     .post-details {
         max-width: 100%;
     }
-    figure.wp-block-image size-full is-resized {
+    .wp-block-image size-full is-resized img {
         max-width: 90%;
     }
 }
