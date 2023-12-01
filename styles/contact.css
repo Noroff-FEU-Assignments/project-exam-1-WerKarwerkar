@@ -106,5 +106,9 @@
     .error-message {
         font-size: 10px; 
     }
+    .form {
+        width: 100%;
+        height: auto;
+    }
 }
  
