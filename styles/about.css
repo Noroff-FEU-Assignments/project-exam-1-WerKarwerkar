@@ -42,7 +42,6 @@
 
 @media screen and (max-width: 768px) {
     .container img {
-        max-width: 200px;
         display: block;
         margin: auto;
         margin-bottom: 20px;
@@ -54,11 +53,10 @@
     }
     .picture-wrapper {
         margin: 0;
-        max-width: 200px; 
         display: flex;
         flex-direction: column;
     }
-    .container p, .media p {
+    .media {
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 0;
