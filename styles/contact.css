@@ -75,14 +75,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .contact-box {
+    contact-box {
         height: auto;
-        width: 90%; 
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 50px;
     }
     .textarea-field {
-        height: 60px; 
+        height: 60px;
         width: 100%;
     }
     .input-field {
@@ -94,6 +94,7 @@
     }
     .btn {
         margin-top: 10px;
+        margin-bottom: 10px;
     }
     .sayHello p {
         margin-left: 20px; 
@@ -105,5 +106,5 @@
     .error-message {
         font-size: 10px; 
     }
-    }
+ }
  
