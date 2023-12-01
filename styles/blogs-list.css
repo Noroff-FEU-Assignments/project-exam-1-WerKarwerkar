@@ -16,7 +16,7 @@
     color: black;
     margin-bottom: 0;
     background-color: #eee;
-    height: ;
+    height: 51px;
 }
 .card h3 {
     text-align: center;
@@ -84,5 +84,8 @@
 
     .card img {
         height: auto;
+    }
+    .card h2 {
+        height: 102px;
     }
 }
