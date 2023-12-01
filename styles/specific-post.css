@@ -62,7 +62,6 @@
     .post-details {
         max-width: 100%;
     }
-    figure.wp-block-image.size-full.is-resized {
-        max-width: 90%;
-    }
-}
+    #post-details > div > h3 > figure:nth-child(2) > img {   
+     max-width: 90%;
+}}
