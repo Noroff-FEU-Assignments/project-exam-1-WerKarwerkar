@@ -75,36 +75,35 @@
 }
 
 @media screen and (max-width: 768px) {
-    @media screen and (max-width: 768px) {
-        .contact-box {
-            height: auto;
-            width: 90%; 
-            margin: 0 auto;
-            margin-bottom: 50px;
-        }
-        .textarea-field {
-            height: 60px; 
-            width: 100%;
-        }
-        .input-field {
-            width: 90%;
-            height: 30px;
-        }
-        .form {
-            margin: 20px; 
-        }
-        .btn {
-            margin-top: 10px;
-        }
-        .sayHello p {
-            margin-left: 20px; 
-            margin-right: 20px;
-        }
-        .contact {
-            font-size: 30px; 
-        }
-        .error-message {
-            font-size: 10px; 
-        }
+    .contact-box {
+        height: auto;
+        width: 90%; 
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
-} 
+    .textarea-field {
+        height: 60px; 
+        width: 100%;
+    }
+    .input-field {
+        width: 90%;
+        height: 30px;
+    }
+    .form {
+        margin: 20px; 
+    }
+    .btn {
+        margin-top: 10px;
+    }
+    .sayHello p {
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+    .contact {
+        font-size: 30px; 
+    }
+    .error-message {
+        font-size: 10px; 
+    }
+    }
+ 
