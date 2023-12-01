@@ -16,7 +16,7 @@ const url = "https://www.weronkakarczmarczyk.no/wp-json/wp/v2/posts";
 
         const response = await fetch(url + `?page=${page}`);
         if (!response.ok) {
-          throw new Error('Failed to fetch Posts');
+          throw new Error('More travels soon...');
         }
 
         const posts = await response.json();
@@ -30,7 +30,7 @@ const url = "https://www.weronkakarczmarczyk.no/wp-json/wp/v2/posts";
                                           <h3>${formattedDate}</h3>
                                           <h4>${post.better_featured_image.alt_text}</h4>
                                           <img src="${post.better_featured_image.source_url}">
-                                        </a>`;
+                                          </a>`;
         }
         page++;
       } catch (error) {
