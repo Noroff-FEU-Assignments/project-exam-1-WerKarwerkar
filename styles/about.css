@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
     .container img {
-        max-width: 320px;
+        max-width: 90%;
         display: block;
         margin: auto;
         margin-bottom: 20px;
@@ -62,5 +62,9 @@
         margin-bottom: 50px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .picture-wrapper img {
+        margin: 10px;
+        max-width: 90%;
     }
 }
