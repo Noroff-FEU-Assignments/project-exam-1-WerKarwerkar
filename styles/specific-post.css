@@ -59,5 +59,8 @@
         margin-right: 0;
         max-width: 100%;
     }     
-    
+    .post-details {
+        max-width: 100%;
+
+    }
 }
