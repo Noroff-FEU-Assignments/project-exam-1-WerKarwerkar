@@ -42,15 +42,15 @@
 
 @media screen and (max-width: 768px) {
     .container img {
-        max-width: 250px;
+        max-width: 300px;
         display: block;
         margin: auto;
         margin-bottom: 20px;
     }
     .container {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     .picture-wrapper {
         margin: 0;
