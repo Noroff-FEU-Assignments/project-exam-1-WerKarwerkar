@@ -35,6 +35,7 @@
     background-color: #eee;
     margin-top: 60px;
     margin-bottom: 40px;
+    
 }
 
 .contentPost h3 {
@@ -45,15 +46,18 @@
     text-decoration: none;
     color: black;
     margin-bottom: 100px;
-
+   
 }
  
-.contentPost img {
-    display: block; 
-    margin: 20px auto; 
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 550px;
-    height: auto;
-}
 
+
+
+@media screen and (max-width: 768px) {
+        
+    .wp-block-image size-full is-resized {
+        width: 150rem;
+
+    }
+        
+
+}
