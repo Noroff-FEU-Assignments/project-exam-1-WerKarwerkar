@@ -125,15 +125,7 @@
         height: 150px;
     }
     .latest-posts div {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.5); 
-        color: #fff; 
-        box-sizing: border-box;
-        bottom: 2px;
         padding: 5px;
-
     }
     .latest-posts p {
         font-family: "Raleway", Sans-serif;
@@ -150,4 +142,14 @@
         margin-top: 100px;
         margin-bottom: 40px;
     }
-} 
+    .morePosts {
+        margin-bottom: 20px;
+    }
+    .logo {
+        margin-bottom: 20px;
+    } 
+    .latestTravels {
+        padding-top: 30px;
+    }
+}
+
