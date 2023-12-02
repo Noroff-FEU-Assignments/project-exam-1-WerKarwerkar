@@ -127,7 +127,10 @@
 
     #hamitems a[href*="instagram"], #hamitems a[href*="facebook"] {
         display: none;
-      }
+    }
+    .logo {
+        margin-bottom: 20px;
+    } 
 }
     
 
