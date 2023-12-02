@@ -142,4 +142,11 @@
         font-weight: 300;
         margin: 0
     }
+    .carousel {
+        border: 2px solid #ccc;
+        overflow: hidden;
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
 } 
