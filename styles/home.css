@@ -145,6 +145,7 @@
     .carousel {
         border: 2px solid #ccc;
         overflow: hidden;
+        height: 200px;
         position: relative;
         margin-top: 100px;
         margin-bottom: 40px;
