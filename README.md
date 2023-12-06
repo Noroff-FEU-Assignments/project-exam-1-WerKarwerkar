@@ -1,0 +1,46 @@
+# project-exam-1-WerKarwerkar
+
+## Overview
+
+This project is a blog site developed as part of the final exam for the first year of frontend development studies. It serves as a practical application of the skills acquired during the course.
+
+## Description
+
+The goal of the project is to create a blog site with the following key features:
+
+### Key Features:
+
+- **Home Page:**
+  - Features a 'Latest Posts' carousel for desktop users.
+  - Allows users to navigate through posts using arrows.
+  - Responsive layout for mobile users.
+
+- **Blog Page:**
+  - Displays the first 10 blogs initially.
+  - Provides a 'Load More' button to fetch and display additional blog posts.
+
+- **Blog Specific Page:**
+  - Dynamically builds content based on a query string parameter.
+  - Updates the title of the page based on the clicked blog.
+
+- **Contact Page:**
+  - Includes a contact form with four textboxes.
+  - Utilizes JavaScript for validation, showing error messages for invalid input.
+
+## Built With
+
+- JavaScript
+- HTML
+- CSS
+- WordPress (as a Headless CMS)
+
+
+## Repository
+
+Clone the repository:
+
+git clone git@github.com:Noroff-FEU-Assignments/project-exam-1-WerKarwerkar.git
+
+## Contact
+werkar51641@stud.noroff.no
+
