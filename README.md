@@ -1,4 +1,6 @@
 # project-exam-1-WerKarwerkar
+![Screenshot 2024-01-18 at 16 24 55](https://github.com/Noroff-FEU-Assignments/project-exam-1-WerKarwerkar/assets/126430261/24422598-ff95-49a4-bd1f-e27da688486a)
+
 
 ## Overview
 
